@@ -35,7 +35,7 @@ struct ScanJson
 			std::cout<<value<<"\n";
 #endif
 		file.close();
-		temp->shrink_to_fit();
+		//temp->shrink_to_fit(); //造成迭代器失效，没必要重新申请一块空间
 		return temp;
 	}
 };
